@@ -6,10 +6,8 @@ using namespace std;
 int main() {
 
     string Nume , Prenume;
-    int Varsta;
-    char gen;
-    int Prioritate;
-    char semn;
+    int Varsta,Prioritate;
+    char gen,semn;
     PriorityQueue<Patient> *CoadaPrioritati=new PriorityQueue<Patient>(10);
 
 
@@ -18,11 +16,14 @@ int main() {
             cin>>ws>>Prenume;
             cin>>Nume>>Varsta;
             cin>>ws>>gen>>Prioritate;
+            
             Patient Pacient;
+            
             Pacient.firstName = Prenume;
             Pacient.lastName = Nume;
             Pacient.age = Varsta;
             Pacient.gender = gen;
+            
             CoadaPrioritati->push(Pacient,Prioritate);
         }
         else if(semn=='-') {
