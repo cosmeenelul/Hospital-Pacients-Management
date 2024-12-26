@@ -1,4 +1,5 @@
 # Hospital-Pacients-Management
+A project based on Data Structures and Algorithms , using two custom created Headers.
 
 # RO LANGUAGE : 
 # Sistem de Management al Pacienților din Spital
